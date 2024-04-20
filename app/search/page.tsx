@@ -23,7 +23,8 @@ export default async function SearchPage({ searchParams }: SearchPageProps) {
       <div className="flex flex-col items-center py-2 space-y-1 text-center">
         <h3 className="font-semibold">No results</h3>
         <p className="text-sm text-gray-500">
-          Sorry, we couldn't find any matches for <span className="font-medium text-green-600 break-all">{query}</span>.
+          Sorry, we couldn&apos;t find any matches for{' '}
+          <span className="font-medium text-green-600 break-all">{query}</span>.
         </p>
       </div>
     );

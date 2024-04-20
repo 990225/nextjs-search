@@ -1,3 +1,4 @@
+import { Suspense } from 'react';
 import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
 import SearchBar from '@/components/SearchBar';
@@ -23,7 +24,9 @@ export default function RootLayout({
           <div className="sticky top-0 flex flex-col items-center gap-6 p-6 pb-0 bg-white z-10">
             <h1 className="text-4xl font-bold">Search</h1>
 
-            <SearchBar />
+            <Suspense>
+              <SearchBar />
+            </Suspense>
           </div>
 
           <div id="container" className="p-6 pt-3 space-y-1">
